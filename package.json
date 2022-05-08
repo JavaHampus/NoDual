@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  },
+  "name": "nodual",
+  "description": "Get notifications whena server member connects to another FiveM server.",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "devDependencies": {},
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavaHampus/NoDual.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JavaHampus/NoDual/issues"
+  },
+  "homepage": "https://github.com/JavaHampus/NoDual#readme"
+}
