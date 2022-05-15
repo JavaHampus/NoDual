@@ -11,15 +11,13 @@ const client: Client = new Client({
 });
 
 client.on('presenceUpdate', (oldPresence, newPresence) => {
-    const user = newPresence.member;
-    if(user.presence.activities.length > 0) {
-        const newActivity = newPresence.activities[0].name;
+    if(!oldPresence.activities.length && newPresence.activities.length) {
+        return ValidateActivity(newPresence.member, client, newPresence.activities[0].name);
+    }
 
-        if(oldPresence.activities.length > 0) {
-            const oldActivity = oldPresence.activities[0].name;
-            ValidateActivity(user, client, oldActivity, newActivity, true)
-        } else {
-            ValidateActivity(user, client, "", newActivity, false)
+    if(oldPresence.activities.length && newPresence.activities.length) {
+        if(oldPresence.activities[0].name != newPresence.activities[0].name) {
+            return ValidateActivity(oldPresence.member, client, oldPresence.activities[0].name);
         }
     }
 })
