@@ -1,8 +1,8 @@
 export const CLIENT = {
-    TOKEN: "OTYyNjI5NzM3NTQzNTMyNTQ0.YlKUzg.ouHD2AV8dCok2mHy0ZNMeH5WtWs",
+    TOKEN: "",
 }
 
 export const SERVER = {
-    "PRESENCE_TITLE": "JRP",
+    "PRESENCE_TITLE": "SERVER NAME",
     "CHANNEL": "967351657505628210"
 }
