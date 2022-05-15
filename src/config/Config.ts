@@ -3,6 +3,6 @@ export const CLIENT = {
 }
 
 export const SERVER = {
-    "PRESENCE_TITLE": "SERVER NAME",
-    "CHANNEL": "967351657505628210"
+    "PRESENCE_TITLE": "Server Title",
+    "CHANNEL": "Channel ID",
 }
