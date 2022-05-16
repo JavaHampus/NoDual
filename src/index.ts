@@ -11,9 +11,7 @@ const client: Client = new Client({
 });
 
 client.on('presenceUpdate', (oldPresence, newPresence) => {
-    if(oldPresence.activities == null) return;
-    
-    if(!oldPresence.activities.length && newPresence.activities.length) {
+    if(!oldPresence.activities.length && newPresence.activities.length || oldPresence.activities == null) {
         return ValidateActivity(newPresence.member, client, newPresence.activities[0].name);
     }
 
